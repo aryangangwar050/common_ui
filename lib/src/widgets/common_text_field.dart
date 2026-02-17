@@ -142,7 +142,8 @@ class CommonTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final effectiveBorderColor = style.borderColor ?? Theme.of(context).dividerColor;
+    final effectiveBorderColor =
+        style.borderColor ?? Theme.of(context).dividerColor;
 
     return TextFormField(
       controller: controller,
@@ -166,7 +167,9 @@ class CommonTextField extends StatelessWidget {
         counterText: '',
         border: style.border(effectiveBorderColor),
         enabledBorder: style.border(effectiveBorderColor),
-        focusedBorder: style.border(style.borderColor ?? Theme.of(context).primaryColor),
+        focusedBorder: style.border(
+          style.borderColor ?? Theme.of(context).primaryColor,
+        ),
         errorBorder: style.border(Colors.red),
       ),
     );

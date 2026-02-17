@@ -8,11 +8,7 @@ class AppValidators {
     return null;
   }
 
-  static String? regex(
-    String? value,
-    RegExp regex,
-    String message,
-  ) {
+  static String? regex(String? value, RegExp regex, String message) {
     if (value == null || value.isEmpty) return null;
     if (!regex.hasMatch(value)) {
       return message;

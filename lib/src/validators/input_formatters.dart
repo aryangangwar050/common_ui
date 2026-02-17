@@ -15,5 +15,6 @@ class NoSpaceInputFormatter extends TextInputFormatter {
   }
 }
 
-final alphabeticInputFormatter =
-    FilteringTextInputFormatter.allow(RegExp(r'[a-zA-Z\s]'));
+final alphabeticInputFormatter = FilteringTextInputFormatter.allow(
+  RegExp(r'[a-zA-Z\s]'),
+);
