@@ -12,6 +12,7 @@ dependencies:
     sdk: flutter
   cached_network_image: ^3.4.1
   flutter_cache_manager: ^3.4.1
+  bounce: ^1.0.2
 
 dev_dependencies:
   flutter_test:
