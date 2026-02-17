@@ -1,3 +1,4 @@
+import 'package:bounce/bounce.dart';
 import 'package:flutter/material.dart';
 
 /// Style configuration for [CommonButton].
@@ -129,11 +130,10 @@ class CommonButton extends StatelessWidget {
           )
         : null;
 
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(borderRadius),
+      child: Bounce(
         onTap: isLoading ? null : _handlePress,
-        borderRadius: BorderRadius.circular(borderRadius),
         child: Container(
           width: width,
           height: height,
