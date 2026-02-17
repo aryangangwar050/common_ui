@@ -135,6 +135,7 @@ class _CommonUniversalImageState extends State<CommonUniversalImage> {
                 child: widget.errorWidget ??
                     Image.asset(
                       'assets/images/placeholder.webp',
+                      package: 'common_ui',
                       height: widget.height,
                       width: widget.width,
                       fit: widget.fit,
@@ -166,6 +167,7 @@ class _CommonUniversalImageState extends State<CommonUniversalImage> {
     return widget.errorWidget ??
         Image.asset(
           'assets/images/placeholder.webp',
+          package: 'common_ui',
           height: widget.height,
           width: widget.width,
           fit: widget.fit,
