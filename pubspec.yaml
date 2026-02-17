@@ -1,7 +1,9 @@
 name: common_ui
-description: "A new Flutter package project."
+description: "A reusable Flutter UI components package."
 version: 0.0.1
-homepage:
+homepage: https://github.com/aryangangwar050/common_ui
+repository: https://github.com/aryangangwar050/common_ui
+issue_tracker: https://github.com/aryangangwar050/common_ui/issues
 
 environment:
   sdk: ^3.10.8
